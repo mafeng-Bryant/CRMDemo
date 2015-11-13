@@ -1,0 +1,134 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define DEGREES_TO_RADIANS(angle) ((angle)/180.0 *M_PI)
+#define RADIANS_TO_DEGREES(radians) ((radians)*(180.0/M_PI))
+
+#define dayiColor [UIColor colorWithRed:225.0f/255.0f green:48.0f/255.0f blue:35.0f/255.0f alpha:1.0f]
+
+#define avatorColor [UIColor colorWithRed:239.0f/255.0f green:239.0f/255.0f blue:239.0f/255.0f alpha:1.0f]
+#define UIColorFromRGBA(r,g,b,a)            [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define UIColorFromRGB(r,g,b)               UIColorFromRGBA(r,g,b,1.0)
+
+#define KCommendButtonTag 100
+#define KSolidButtonTag 101
+#define KSerViceButtonTag 102
+#define KTaochaButtonTag 103
+
+
+#define KDefaultButtonTag 112
+#define KRenQiButtonTag 113
+#define KSellButtonTag 114
+#define KPriceButtonTag 115
+#define KTimeButtonTag 116
+
+#define DEVICETYPE @"4"
+
+#define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
+#define IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 ? YES : NO)
+
+
+//正式环境
+//#define BASE_URL @"http://weixin.meetrend.com/crm/"
+
+//测试环境
+//#define BASE_URL @"http://192.168.1.200:8080/crmdemo/"
+//#define BASE_URL @"http://meetrend.f3322.org:88/dayi/"
+//#define BASE_URL @"http://192.168.1.200:9090/ysy/"
+//#define BASE_URL @"http://192.168.1.106:8085/dayi/" //李立本地服务器
+
+//公司正式环境
+//#define BASE_URL @"http://192.168.1.207:8080/crm/"
+//#define Domain @"192.168.1.207"
+//#define BASE_URL @"http://192.168.1.11:8080/crm/"
+
+
+//正式环境
+//#define Domain @"192.168.1.11"
+//
+#define BASE_URL @"http://117.25.178.67:6060/crm/"
+#define Domain @"117.25.178.67"
+
+
+//#define BASE_URL @"http://192.168.1.11:8090/crm/"
+
+
+
+//订单页面所有数据
+#define RECOMMEND_allData_URL @"api/Crm.ProductCatalog.getCatalog"
+//首页菜单数据。
+#define HomeMenudata_URL @"api/Ecp.Menu.getPadMenuItem"
+
+//首页计划表数据
+#define HomePlandata_URL @"api/Crm.PadHomepageItem.getHomepageReport"
+//首页绩效表数据
+#define HomePerformancedata_URL @"api/Crm.PadHomepageItem.getHomepageReport"
+//首页排名报表数据
+#define HomeRankdata_URL @"api/Crm.PadHomepageItem.getHomepageReport"
+
+#define LOGIN_URL @"api/Ecp.OnlineUser.apiLogin"
+//退出
+#define LOGOUT_URL @"api/Ecp.OnlineUser.apiLogout"
+//Ecp.OnlineUser.Logout.jdp
+//客户名字
+#define CoustomName_URL @"api/Crm.Order.getCustomerSelectList"
+//门店名字
+#define StoreName_URL @"api/Crm.Order.getStoreSelectList"
+
+//机场名字
+#define AirportName_URL @"api/Crm.Order.getAirportSelectList"
+
+//会员卡号
+#define CoustomMember_URL @"api/Crm.Order.getMemberCardSelectList"
+
+//test url
+//推荐列表
+#define RECOMMEND_TEA_URL @"api/Crm.Inventory.recommendTea"
+
+//产品列表
+#define ProductCategoryList_URL @"api/Crm.Product.getProductList"
+
+//产品详情
+#define ProductCategoryDetail_URL @"api/Crm.Product.getProductDetail"
+
+//我的订单
+#define ProductOrderList_URL @"api/Crm.Order.getMyOrderList"
+
+//提交订单
+#define SubmitProductOrderList_URL @"api/Crm.Order.newOrder"
+
+//首页系统未读消息个数
+#define HomeUnReadMessage_URL @"api/Ecp.SystemMessage.unReadMessage"
+
+
+//名片全能王
+#define MingPianQuanNengWangKey @"Ud5hCHTJKrW3K12HaMr1MDWA"
+
+#define ServiceGoodsID @"162172FD-C1AF-4FD3-AAFE-B2C4D7C1BF93"//服务商品
+#define EntityGoodsID @"C8D3DFED-467D-421D-9EC9-7FE4B099A8FD"//实体商品
+#define SetmealGoodsID @"41BCD103-0D6E-4147-B697-D385A4D476CC"//套餐商品
+#define AllianceGoodsID @"3436CA3F-E035-4AEC-8B0E-8C4FCC1C4B34"//联盟商品
+
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+
+#define KPublicButtonTag 100
+#define KWorkButtonTag 101
+#define KOrderButtonTag 102
+#define KBirthdayButtonTag 103
+#define KGENJINButtonTag 104
+
